@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - Print the numbers
- * Returns: 0
+ * main - Print the numbers since of 0to10
+ * Return: 0
  */
 int main(void)
 {
