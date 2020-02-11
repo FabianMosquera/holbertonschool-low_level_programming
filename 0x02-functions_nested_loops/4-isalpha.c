@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
  * _isalpha - Print the alphabetic character
+ * @c: variable
  * Return: 1 if c is a letter in uppercase
  */
 int _isalpha(int c)
