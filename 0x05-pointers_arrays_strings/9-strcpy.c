@@ -13,9 +13,7 @@ char *_strcpy(char *dest, char *src)
 	if (dest && src)
 	{
 		while (*(src + a))
-		{
 			++a;
-		}
 
 		if (src + a < dest || dest + a < src)
 		{
@@ -25,5 +23,5 @@ char *_strcpy(char *dest, char *src)
 		}
 	}
 
-	return (dest);
+	return (*dest);
 }
