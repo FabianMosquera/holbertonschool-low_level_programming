@@ -17,10 +17,7 @@ char *_strstr(char *haystack, char *needle)
 				return (haystack);
 			if (!*a)
 				return (NULL);
-		}
-		while (*a++ == *b++);
-	}
-	while (*(++haystack));
-
+		} while (*a++ == *b++);
+	} while (*(++haystack));
 	return (NULL);
 }
