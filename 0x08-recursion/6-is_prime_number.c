@@ -14,7 +14,7 @@ int _is_prime_number(int n, int m)
 	return (_is_prime_number(n, m + 1));
 }
 /**
- * _sqrt_recursion - Function that returns 1 is a palindrome and 0
+ * is_prime_number - Function that returns 1 is a palindrome and 0
  * @n: int
  * Return: int
  */
