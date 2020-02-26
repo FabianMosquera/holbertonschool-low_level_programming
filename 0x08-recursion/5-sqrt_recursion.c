@@ -5,11 +5,12 @@
  * @m: int
  * Return: int
  */
-int _sqrt_recursion(int n, int m)
+int __sqrt_recursion(int n, int m)
 {
 	if (m * m < n)
-		return (_sqrt_recursion(n, m - 1));
-	return (m * m == 0 ? m : 1);
+		return (__sqrt_recursion(n, m + 1));
+	return (m * m == n ? m : -1);
+}
 /**
  * _sqrt_recursion - Function that returns 1 is a palindrome and 0
  * @n: int
@@ -17,5 +18,5 @@ int _sqrt_recursion(int n, int m)
  */
 int _sqrt_recursion(int n)
 {
-	return(_sqrt_recursion(n, 0));
+	return(__sqrt_recursion(n, 0));
 }
