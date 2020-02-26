@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _sqrt_recursion - Function that returns 1 is a palindrome and 0
+ * __sqrt_recursion - Function that returns 1 is a palindrome and 0
  * @n: int
  * @m: int
  * Return: int
@@ -18,5 +18,5 @@ int __sqrt_recursion(int n, int m)
  */
 int _sqrt_recursion(int n)
 {
-	return(__sqrt_recursion(n, 0));
+	return (__sqrt_recursion(n, 0));
 }
