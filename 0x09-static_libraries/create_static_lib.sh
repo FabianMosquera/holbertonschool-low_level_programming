@@ -1,2 +1,5 @@
 #!/bin/bash
-(gcc -g -O -c *.c) ; (ar rc liball.a *.o)
+files=( *.c )
+gcc -c -Wall -Werror -Wextra -pedantic "${files[@]}"
+ar -rc liball.a "${files[@]/%.c/.o}"
+rm "${files[@]/%.c/.o}"
