@@ -12,13 +12,13 @@ void print_number(int n)
 		if (n > 9)
 			print_number(n / 10);
 		_putchar('0' + n % 10);
-		else
-		{
+	}
+	else
+	{
 			_putchar('-');
 			if (n < -9)
 				print_number(n / -10);
 			_putchar('0' - n % 10);
-		}
 	}
 }
 /**
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		_puts("Error");
-	return (1);
+		return (1);
 	}
 	print_number(atoi(argv[1]) * atoi(argv[2]));
 	_putchar('\n');
