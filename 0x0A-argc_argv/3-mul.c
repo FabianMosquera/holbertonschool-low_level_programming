@@ -44,8 +44,10 @@ void _puts(char *str)
 int main(int argc, char *argv[])
 {
 	if (argc != 3)
+	{
 		_puts("Error");
 	return (1);
+	}
 	print_number(atoi(argv[1]) * atoi(argv[2]));
 	_putchar('\n');
 	return (0);
