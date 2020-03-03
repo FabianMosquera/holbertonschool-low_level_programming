@@ -1,9 +1,8 @@
 #include "holberton.h"
-
 /**
  * _strdup - Function that returns a pointer
- *
- * Return: 
+ * @str: char
+ * Return: char
  */
 char *_strdup(char *str)
 {
@@ -12,13 +11,13 @@ char *_strdup(char *str)
 
 	if (str)
 	{
-		while(str[size++])
-		       ;	
+		while (str[size++])
+			;
 
 		a = malloc(sizeof(char) * size);
 		if (a)
 		{
-			while (--size)
+			while (size--)
 				a[size] = str[size];
 
 			return (a);
