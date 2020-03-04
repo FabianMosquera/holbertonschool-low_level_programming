@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 
 	for (c = 0, size = 1; c < ac; ++c, ++size)
 	{
-		for(b = av[c]; *b; ++b, ++size)
+		for (b = av[c]; *b; ++b, ++size)
 			;
 	}
 	a = malloc(sizeof(char) * size);
@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 
 	for (c = 0, size = 0; c < ac; ++c, ++size)
 	{
-		for(b = av[c]; *b; ++b, ++size)
+		for (b = av[c]; *b; ++b, ++size)
 			a[size] = *b;
 		a[size] = '\n';
 	}
