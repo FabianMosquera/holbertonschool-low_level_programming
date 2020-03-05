@@ -29,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (!(nmemb && size))
 		return (NULL);
 
-	g = malloc(sizeof(int) * (nmemb * size));
+	g = malloc(nmemb * size);
 	if (!g)
 		return (NULL);
 
