@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	while (h--)
-		printf("%02x%c", *plato++ & 0xff, plato ? ' ' : '\n');
+		printf("%02x%c", *plato++ & 0xff, b ? ' ' : '\n');
 
 	return (0);
 }
