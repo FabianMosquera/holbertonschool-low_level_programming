@@ -13,9 +13,9 @@ int sum_them_all(const unsigned int n, ...)
 	int sum = 0;
 
 	va_start(variable, n);
-	while(Bar--)
+	while (Bar--)
 		sum += va_arg(variable, int);
 	va_end(variable);
 
-	return(sum);
+	return (sum);
 }
