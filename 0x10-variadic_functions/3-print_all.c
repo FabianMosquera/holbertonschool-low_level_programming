@@ -6,7 +6,7 @@
  */
 int print_c(va_list list)
 {
-	return(printf("%c", va_arg(list, int)));
+	return (printf("%c", va_arg(list, int)));
 }
 /**
  * print_i - Print integer
@@ -15,7 +15,7 @@ int print_c(va_list list)
  */
 int print_i(va_list list)
 {
-	return(printf("%i", va_arg(list, int)));
+	return (printf("%i", va_arg(list, int)));
 }
 /**
  * print_f - Print float
@@ -24,7 +24,7 @@ int print_i(va_list list)
  */
 int print_f(va_list list)
 {
-	return(printf("%f", va_arg(list, double)));
+	return (printf("%f", va_arg(list, double)));
 }
 /**
  * print_s - Print string
@@ -34,9 +34,10 @@ int print_f(va_list list)
 int print_s(va_list list)
 {
 	char *str = va_arg(list, char *);
-	if(!str)
+
+	if (!str)
 		str = "(nil)";
-	return(printf("%s", str));	
+	return (printf("%s", str));
 }
 /**
  * print_all - function that prints anything.
@@ -53,17 +54,16 @@ void print_all(const char * const format, ...)
 		{'s', print_s},
 		{0, NULL}
 	};
-	char *separate[] = {"",", "};
+	char *separate[] = {"", ", "};
 	unsigned int bytes = 0, funct_index = 0, format_index = 0;
 
 	va_start(list, format);
-	while(format && format[format_index])
+	while (format && format[format_index])
 	{
 		funct_index = 0;
 		while (funct_list[funct_index].format)
 		{
-			if(format[format_index] == 
-					funct_list[funct_index].format)
+			if (format[format_index] == funct_list[funct_index].format)
 			{
 				printf("%s", separate[bytes != 0]);
 				bytes += funct_list[funct_index].funct(list);
