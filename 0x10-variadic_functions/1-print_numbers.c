@@ -13,12 +13,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int surplus = n;
 
 	va_start(list, n);
-	if(!separator)
+	if (!separator)
 		separator = "";
-	while(surplus--)
+	while (surplus--)
 	{
 		printf("%i", va_arg(list, int));
-		if(surplus)
+		if (surplus)
 			printf("%s", separator);
 	}
 	printf("\n");
