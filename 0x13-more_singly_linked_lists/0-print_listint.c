@@ -7,7 +7,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	if (j)
+	if (h)
 	{
 		printf("%d\n", h->n);
 		return (print_listint(h->next) + 1);
