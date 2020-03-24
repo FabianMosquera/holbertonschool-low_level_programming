@@ -4,7 +4,7 @@
  * free_listint - free a linked list
  * @head: pointer
  */
-void free_listint(listint_t *head);
+void free_listint(listint_t *head)
 {
 	if (head)
 	{
